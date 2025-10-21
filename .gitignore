@@ -1,0 +1,19 @@
+.vscode/
+
+.DS_Store
+
+Thumbs.db
+ehthumbs.db
+
+node_modules/
+
+*.log
+
+.env
+
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.swp
