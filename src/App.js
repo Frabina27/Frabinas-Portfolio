@@ -6,18 +6,23 @@ import Projects from "./pages/Projects";
 import Designs from "./pages/Designs";
 import Resume from "./pages/Resume";
 
-export default function App(){
+export default function App() {
   return (
-    <Router>
-      <Navbar />
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/designs" element={<Designs />} />
-          <Route path="/resume" element={<Resume />} />
-        </Routes>
-      </div>
-    </Router>
+    <>
+      {/* Background gradient layer */}
+      <div className="background"></div>
+
+      <Router>
+        <Navbar />
+        <div className="container app-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/designs" element={<Designs />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
