@@ -1,17 +1,44 @@
 import React from "react";
 
-export default function ProjectCard({title, subtitle, tags}) {
+export default function ProjectCard({ title, subtitle, tags, image, link }) {
   return (
     <div className="card card-hover">
-      <div style={{height:120, borderRadius:10, background:'linear-gradient(135deg, rgba(168,216,255,0.08), rgba(10,30,60,0.04))'}} />
-      <div style={{paddingTop:12}}>
-        <div className="row" style={{justifyContent:'space-between'}}>
+      {}
+      <div
+        style={{
+          height: 180,
+          borderRadius: 10,
+          overflow: "hidden",
+          background: image
+            ? "none"
+            : "linear-gradient(135deg, rgba(168,216,255,0.08), rgba(10,30,60,0.04))",
+        }}
+      >
+        {image && (
+          <img
+            src={image}
+            alt={title}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              opacity: 0.9,
+            }}
+          />
+        )}
+      </div>
+
+      <div style={{ paddingTop: 12 }}>
+        <div className="row" style={{ justifyContent: "space-between" }}>
           <h3>{title}</h3>
-          <div className="small">{tags?.join(' • ')}</div>
+          <div className="small">{tags?.join(" • ")}</div>
         </div>
-        <p className="small" style={{marginTop:8}}>{subtitle}</p>
-        <div style={{marginTop:12}}>
-          <a className="btn" href="#">{'View Project'}</a>
+        <p className="small" style={{ marginTop: 8 }}>{subtitle}</p>
+
+        <div style={{ marginTop: 12 }}>
+          <a className="btn" href={link || "#"} target="_blank" rel="noopener noreferrer">
+            View Project
+          </a>
         </div>
       </div>
     </div>
