@@ -1,9 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function ProjectCard({ title, subtitle, tags, image, link }) {
+export default function ProjectCard({ id, title, subtitle, tags, image }) {
   return (
     <div className="card card-hover">
-      {}
       <div
         style={{
           height: 180,
@@ -36,9 +36,10 @@ export default function ProjectCard({ title, subtitle, tags, image, link }) {
         <p className="small" style={{ marginTop: 8 }}>{subtitle}</p>
 
         <div style={{ marginTop: 12 }}>
-          <a className="btn" href={link || "#"} target="_blank" rel="noopener noreferrer">
+          {/* React Router Link instead of <a> */}
+          <Link className="btn" to={`/projects/${id}`}>
             View Project
-          </a>
+          </Link>
         </div>
       </div>
     </div>

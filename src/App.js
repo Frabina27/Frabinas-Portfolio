@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Designs from "./pages/Designs";
 import Resume from "./pages/Resume";
+import ProjectDetails from "./pages/ProjectDetails";
+
 
 export default function App() {
   return (
@@ -20,7 +22,8 @@ export default function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/designs" element={<Designs />} />
             <Route path="/resume" element={<Resume />} />
-          </Routes>
+            <Route path="/projects/:id" element={<ProjectDetails />} /> {/* new */}
+        </Routes>
         </div>
       </Router>
     </>
