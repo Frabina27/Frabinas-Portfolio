@@ -1,19 +1,15 @@
 import React from "react";
 import "./MagicBento.css";
 
-export default function MagicBento({ items }) {
+export default function MagicBento({ items = [] }) {
   return (
-    <div className="bento-grid">
+    <div className="magic-bento-grid">
       {items.map((item, i) => (
-        <div key={i} className={`bento-card card-${(i % 5) + 1}`}>
-          <div className="bento-content">
+        <div key={i} className="magic-bento-card">
+          {item.image && <img src={item.image} alt={item.title} />}
+          <div className="magic-bento-content">
             <h3>{item.title}</h3>
-            <p>{item.description}</p>
-            <div className="bento-tags">
-              {item.tags?.map((tag, j) => (
-                <span key={j}>{tag}</span>
-              ))}
-            </div>
+            <p>{item.subtitle}</p>
           </div>
         </div>
       ))}

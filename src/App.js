@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import Designs from "./pages/Designs";
 import Resume from "./pages/Resume";
 import ProjectDetails from "./pages/ProjectDetails";
+import Eunoia from "./pages/Eunoia";
 
 
 export default function App() {
@@ -22,7 +23,7 @@ export default function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/designs" element={<Designs />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="/projects/:id" element={<ProjectDetails />} /> {/* new */}
+            <Route path="/projects/1" element={<Eunoia />} />
         </Routes>
         </div>
       </Router>

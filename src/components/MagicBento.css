@@ -1,0 +1,28 @@
+.magic-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.magic-bento-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.magic-bento-card:hover {
+  transform: translateY(-6px);
+}
+
+.magic-bento-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.magic-bento-content {
+  padding: 16px;
+}
