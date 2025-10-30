@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  padding-top: 20px;   /* smaller top padding */
-  padding-bottom: 20px; /* smaller bottom padding */
+  padding-top: 20px;   
+  padding-bottom: 20px; 
 }
 
 .hero-left {
@@ -26,6 +26,13 @@
 
 .accent {
   color: var(--sky);
+}
+
+.typed-text {
+  border-right: 2px solid var(--sky); /* cursor effect */
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
 }
 
 /* Buttons */
@@ -72,24 +79,18 @@
 
 .floating-image {
   position: relative;
-  width: 280px;   /* slightly smaller to match tighter layout */
+  width: 280px;
   height: 280px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 40px rgba(168,216,255,0.25); /* softer shadow */
-  animation: float 3s ease-in-out infinite;    /* faster, smoother float */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
+  box-shadow: 0 0 40px rgba(168,216,255,0.25);
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .floating-image:hover {
-  transform: translateY(-8px) scale(1.05); /* subtle lift and grow */
-  box-shadow: 0 15px 45px rgba(168,216,255,0.35); /* stronger shadow on hover */
-}
-
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); } /* smaller float distance */
-  100% { transform: translateY(0); }
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 45px rgba(168,216,255,0.35);
 }
 
 .floating-image::before {
@@ -108,10 +109,9 @@
   object-fit: cover;
 }
 
-/* Floating motion */
 @keyframes float {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-14px); }
+  50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
 
@@ -120,8 +120,8 @@
   display: flex;
   justify-content: space-between;
   gap: 28px;
-  margin-top: 20px;  /* reduced gap from hero section */
-  padding: 0 28px 40px; /* reduce bottom padding */
+  margin-top: 20px;
+  padding: 0 28px 40px;
 }
 
 .skill-card {
@@ -172,4 +172,8 @@
     flex-direction: column;
     gap: 20px;
   }
+
+
+
+
 }

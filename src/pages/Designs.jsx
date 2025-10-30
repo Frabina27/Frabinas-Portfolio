@@ -2,48 +2,53 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import EunoiaImg from "../images/EunoiaImg.png";
 
-// Export the items array so other files can use it
+// Export items array
 export const items = [
   {
     title: "Eunoia - Wellness Platform",
     id: 1,
     subtitle: "Designed a gamified wellness platform during a 24hr design-a-thon.",
     tags: ["Branding", "UI/UX"],
-    image: EunoiaImg
+    image: EunoiaImg,
   },
-  { 
-    title:'MeteorMate - Roommate Finder', 
+  {
+    title: "MeteorMate - Roommate Finder",
     id: 2,
-    subtitle:'Designs for a student roommate matching platform.', 
-    tags:['UI/UX','Figma']
+    subtitle: "Designs for a student roommate matching platform.",
+    tags: ["UI/UX", "Figma"],
   },
   {
-    title:'Personal Portfolio', 
+    title: "Personal Portfolio",
     id: 5,
-    subtitle:'Design system and components for a personal portfolio.', 
-    tags:['UI/UX','Figma']
+    subtitle: "Design system and components for a personal portfolio.",
+    tags: ["UI/UX", "Figma"],
   },
   {
-    title:'ACM Archives - Magazine', 
+    title: "ACM Archives - Magazine",
     id: 3,
-    subtitle:'Designed pages in a magazine.', 
-    tags:['Branding','Canva','Graphic Design']
+    subtitle: "Designed pages in a magazine.",
+    tags: ["Branding", "Canva", "Graphic Design"],
   },
   {
-    title:'Google Student Developer Club', 
+    title: "Google Student Developer Club",
     id: 4,
-    subtitle:'Designed promotional material and created.', 
-    tags:['Branding','Canva','Graphic Design']
+    subtitle: "Designed promotional material and created.",
+    tags: ["Branding", "Canva", "Graphic Design"],
   },
 ];
 
 export default function Designs() {
   return (
-    <div>
+    <div className="designs-page">
       <h1>Designs</h1>
       <p className="small">A showcase of my creative work</p>
+
+
+      {/* Your existing project cards */}
       <div className="grid">
-        {items.map((it,i) => <ProjectCard key={i} {...it} />)}
+        {items.map((it, i) => (
+          <ProjectCard key={i} {...it} />
+        ))}
       </div>
     </div>
   );

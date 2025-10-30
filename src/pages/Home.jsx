@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 import FrabinaPfp from "../images/FrabinaPfp.png";
 import "./Home.css";
 
@@ -11,8 +12,18 @@ export default function Home() {
         <div className="hero-left">
           <h1 className="hero-title">
             Hello, I’m <span className="accent">Frabina</span>, <br />
-            a <span className="accent">UX/UI Designer</span> <br />
-            and <span className="accent">Programmer!</span>
+            <span className="accent">
+              <Typewriter
+                options={{
+                  strings: ["a UX/UI Designer", "a Programmer!", "a Student."],
+                  autoStart: true,
+                  loop: true,
+                  delay: 100, 
+                  deleteSpeed: 50,
+                  pauseFor: 1500,
+                }}
+              />
+            </span>
           </h1>
 
           <div className="hero-buttons">
