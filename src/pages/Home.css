@@ -1,14 +1,14 @@
 /* === HERO SECTION === */
 .hero-section {
-  min-height: calc(100vh - 72px); /* fills screen minus navbar */
+  min-height: auto; /* remove forced full height */
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  padding: 60px 28px;
+  padding-top: 20px;   /* smaller top padding */
+  padding-bottom: 20px; /* smaller bottom padding */
 }
 
-/* LEFT SIDE */
 .hero-left {
   flex: 1;
   display: flex;
@@ -20,41 +20,49 @@
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 32px;
   color: var(--text);
+  margin-bottom: 32px;
 }
 
 .accent {
   color: var(--sky);
 }
 
-/* MAIN BUTTONS (Resume / Projects) */
+/* Buttons */
 .hero-buttons {
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
-.hero-buttons .btn {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+.btn {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
   color: var(--text);
-  padding: 12px 20px;
+  padding: 12px 22px;
   border-radius: 10px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.25s ease;
 }
 
-.hero-buttons .btn:hover {
+.btn:hover {
   background: var(--sky);
   color: #072033;
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(168, 216, 255, 0.35);
+  box-shadow: 0 10px 30px rgba(8, 28, 45, 0.35);
 }
 
-/* IMAGE (Right Side) */
+/* Body text */
+.hero-description {
+  max-width: 500px;
+  font-size: 1.05rem;
+  color: rgba(230,238,248,0.9);
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+/* === FLOATING IMAGE === */
 .hero-right {
   flex: 1;
   display: flex;
@@ -62,124 +70,106 @@
   justify-content: center;
 }
 
-.circle-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+.floating-image {
+  position: relative;
+  width: 280px;   /* slightly smaller to match tighter layout */
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(168,216,255,0.25); /* softer shadow */
+  animation: float 3s ease-in-out infinite;    /* faster, smoother float */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
 }
 
-.circle-image img {
-  width: 260px;
-  height: auto;
-  border-radius: 12px;
+.floating-image:hover {
+  transform: translateY(-8px) scale(1.05); /* subtle lift and grow */
+  box-shadow: 0 15px 45px rgba(168,216,255,0.35); /* stronger shadow on hover */
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); } /* smaller float distance */
+  100% { transform: translateY(0); }
+}
+
+.floating-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at top left, var(--sky), transparent 70%);
+  z-index: -1;
+}
+
+.floating-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   object-fit: cover;
 }
 
-/* === PROJECT LINKS (Below Hero) === */
-.project-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  margin: 60px auto 0 auto;
-  max-width: 800px;
+/* Floating motion */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
 }
 
-.project-links .mini-btn {
+/* === SKILLS SECTION === */
+.skills-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  margin-top: 20px;  /* reduced gap from hero section */
+  padding: 0 28px 40px; /* reduce bottom padding */
+}
+
+.skill-card {
   flex: 1;
   text-align: center;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: var(--text);
-  padding: 14px 24px;
-  border-radius: 10px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-
-.project-links .mini-btn:hover {
-  background: var(--sky);
-  color: #072033;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(168, 216, 255, 0.35);
-}
-
-/* === ABOUT SECTION === */
-.about-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  padding: 100px 28px;
-}
-
-.about-left {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.square-image.card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  padding: 24px;
+  transition: all 0.3s ease;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.square-image img {
-  width: 240px;
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover;
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(168,216,255,0.25);
 }
 
-.about-right {
-  flex: 2;
+.skill-card h3 {
+  color: var(--sky);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
 
-.about-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 20px;
-}
-
-.about-description {
-  font-size: 1.05rem;
-  color: rgba(230, 238, 248, 0.9);
-  line-height: 1.6;
+.skill-card p {
+  color: rgba(230,238,248,0.9);
+  font-size: 1rem;
 }
 
 /* === RESPONSIVE === */
 @media (max-width: 900px) {
-  .hero-section,
-  .about-section {
+  .hero-section {
     flex-direction: column;
     text-align: center;
   }
 
-  .hero-right,
-  .about-left {
+  .hero-right {
     order: -1;
   }
 
-  .project-links {
+  .floating-image {
+    width: 260px;
+    height: 260px;
+    margin-bottom: 40px;
+  }
+
+  .skills-section {
     flex-direction: column;
-    gap: 16px;
-    max-width: 100%;
+    gap: 20px;
   }
 }
