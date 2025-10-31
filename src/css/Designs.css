@@ -17,7 +17,7 @@
 /* === PROJECT GRID === */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* bigger cards */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 24px;
 }
 
@@ -35,7 +35,7 @@
 
 .card img {
   width: 100%;
-  height: 220px; /* larger image */
+  height: 220px; 
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 12px;
@@ -100,11 +100,10 @@
 }
 
 .info-card {
-  background: rgba(255,255,255,0.08);
-  border-radius: 12px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin: 12px 0; /* vertical spacing */
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05); /* or whatever style you had */
 }
 
 .section-divider {
@@ -133,18 +132,25 @@
   margin: 40px 0;
 }
 
-.iteration-images img {
-  border-radius: 12px;
+.iteration-images {
+  display: block; 
+  gap: 0;         
 }
-
+/* === IMAGE RESIZE ===*/
+.acm-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
 
 /* === RESPONSIVE === */
 @media (max-width: 900px) {
   .grid {
-    grid-template-columns: 1fr; /* single column for small screens */
+    grid-template-columns: 1fr; 
   }
 
   .card img {
-    height: 180px; /* slightly smaller for mobile */
+    height: 180px; 
   }
 }

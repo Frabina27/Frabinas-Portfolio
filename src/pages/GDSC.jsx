@@ -1,96 +1,132 @@
 import React from "react";
-import EunoiaImg from "../images/EunoiaImg.png";
+import GDSCImg from "../images/GDSCImg.png";
 import "../css/Designs.css";
 
-export default function Eunoia() {
+export default function GDSC() {
   return (
     <div className="project-page container">
 
       {/* Project Title */}
-      <h1>Eunoia - Wellness Platform</h1>
+      <h1>GDSC UTD - Club Website</h1>
 
       {/* Project Description */}
       <p className="project-description">
-        Designed a gamified wellness platform during a 24hr design-a-thon. This project focuses on creating engaging, user-friendly wellness experiences.
+        Designed the official website for the Google Developer Student Club at UTD in Figma. 
+        The design focuses on centralizing information about workshops, events, and club resources, making it easy for students to stay engaged.
       </p>
 
       {/* Main Image */}
       <img
-        src={EunoiaImg}
-        alt="Eunoia Main"
+        src={GDSCImg}
+        alt="GDSC Website Screenshot"
         style={{ width: "100%", borderRadius: 12, margin: "20px 0" }}
       />
 
       {/* Project Details */}
       <section className="project-section">
         <h2>Background</h2>
-        <p>Write about the project background here...</p>
+        <p>
+          GDSC UTD hosts weekly workshops and events for students interested in development, design, and technology. 
+          The website was created to centralize event information, provide easy navigation, and encourage student participation.
+        </p>
       </section>
 
       <section className="project-section">
-        <h2>Primary Research</h2>
+        <h2>User Needs & Research</h2>
         <div className="info-card">
-          <p>Write about your primary research methods and findings...</p>
+          <p>
+            Through discussions with club leaders and students, we identified key needs:
+            <br />• Students needed a clear, organized way to view upcoming workshops.
+            <br />• Past events and resources should be easily accessible for review.
+            <br />• Information about club activities and team members needed to be visible to increase engagement.
+            <br />• The design had to be visually engaging but simple, so students could quickly find information.
+          </p>
         </div>
       </section>
 
       <section className="project-section">
-        <h2>Competitive Analysis</h2>
+        <h2>Main Goals</h2>
         <div className="info-card">
-          <p>Write about competitors and insights...</p>
+          <p>
+            - Provide clear, accessible information about upcoming workshops.<br />
+            - Maintain an archive of past events for students to review.<br />
+            - Promote club engagement and simplify access to resources and event registration.
+          </p>
+        </div>
+      </section>
+
+      <section className="project-section">
+        <h2>Design Decisions</h2>
+        <div className="info-card">
+          <p>
+            We prioritized readability and simplicity, creating a modern layout with soft color accents to highlight key information. 
+            Navigation was structured around primary user goals: discovering events, accessing resources, and learning about the club. 
+            Components were designed modularly so the website could scale with future workshops and events.
+          </p>
         </div>
       </section>
 
       <hr className="section-divider" />
 
-      {/* Design Process Steps */}
+      {/* Website Components */}
       <section className="design-process">
-        <h2>The Design Process</h2>
+        <h2>Website Components</h2>
         <div className="process-steps">
           <div className="step-card">
-            <h4>Empathize</h4>
-            <p>Describe empathizing with users here.</p>
+            <h4>Homepage</h4>
+            <p>Highlights upcoming workshops, announcements, and quick navigation to key sections.</p>
           </div>
           <div className="step-card">
-            <h4>Define</h4>
-            <p>Describe problem definition here.</p>
+            <h4>Events Page</h4>
+            <p>Lists upcoming and past events with dates, descriptions, and links to resources or registration.</p>
           </div>
           <div className="step-card">
-            <h4>Ideate</h4>
-            <p>Describe brainstorming and idea generation.</p>
+            <h4>About Page</h4>
+            <p>Provides information about the club’s mission, team, and contact details.</p>
           </div>
           <div className="step-card">
-            <h4>Prototype</h4>
-            <p>Describe prototyping methods used.</p>
-          </div>
-          <div className="step-card">
-            <h4>Test</h4>
-            <p>Describe testing and feedback process.</p>
+            <h4>Resources</h4>
+            <p>Centralized location for slides, workshop materials, and external learning links.</p>
           </div>
         </div>
       </section>
 
       <hr className="section-divider" />
 
-      {/* Iteration 1 */}
+      {/* Development Process */}
       <section className="iteration">
-        <h2>Iteration 1</h2>
-        <p>Describe iteration 1 improvements or changes here.</p>
-        <div className="iteration-images">
-          <img src="../images/iteration1_1.png" alt="Iteration 1 Image 1" style={{ width: "100%", margin: "12px 0" }} />
-          <img src="../images/iteration1_2.png" alt="Iteration 1 Image 2" style={{ width: "100%", margin: "12px 0" }} />
-        </div>
+        <h2>Design Process</h2>
+        <p>
+          Designed entirely in Figma, focusing on a user-centered approach. 
+          Started with understanding student needs and researching existing club websites. 
+          Created wireframes, low-fidelity prototypes, and then high-fidelity designs, iterating based on feedback from club leaders and peers.
+        </p>
       </section>
 
-      {/* Iteration 2 */}
       <section className="iteration">
-        <h2>Iteration 2</h2>
-        <p>Describe iteration 2 improvements or changes here.</p>
-        <div className="iteration-images">
-          <img src="../images/iteration2_1.png" alt="Iteration 2 Image 1" style={{ width: "100%", margin: "12px 0" }} />
-          <img src="../images/iteration2_2.png" alt="Iteration 2 Image 2" style={{ width: "100%", margin: "12px 0" }} />
-        </div>
+        <h2>Challenges</h2>
+        <p>
+          Prioritizing the most important information without overwhelming the user, 
+          and creating a layout that could accommodate both upcoming and past events. 
+          Ensuring consistency and scalability in the design was a key focus.
+        </p>
       </section>
+
+      <section className="iteration">
+        <h2>Accomplishments</h2>
+        <p>
+          Successfully designed a clean, user-friendly website for GDSC UTD. 
+          The design helps students quickly access information and encourages participation in club events.
+        </p>
+      </section>
+
+      <section className="iteration">
+        <h2>What I Learned</h2>
+        <p>
+          Learned how to design modular, student-focused websites, structure event-based content clearly, and use Figma to translate user research into actionable design components.
+        </p>
+      </section>
+
     </div>
   );
 }

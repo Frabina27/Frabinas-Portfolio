@@ -55,7 +55,7 @@ export default function ProjectDetails() {
         <p>Explain why this project was created and the context.</p>
       </section>
 
-      
+      {/* Understanding the Process */}
       <section>
         <h2>Understanding the Process</h2>
         <p>How you approached the project and strategy.</p>

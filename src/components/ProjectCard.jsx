@@ -1,6 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// Map numeric IDs to string-based paths
+const projectPaths = {
+  1: "eunoia",
+  2: "meteormate",
+  3: "acmarchives",
+  4: "gdsc",
+};
+
 export default function ProjectCard({ id, title, subtitle, tags, image }) {
   return (
     <div className="card card-hover">
@@ -36,8 +44,7 @@ export default function ProjectCard({ id, title, subtitle, tags, image }) {
         <p className="small" style={{ marginTop: 8 }}>{subtitle}</p>
 
         <div style={{ marginTop: 12 }}>
-          {/* React Router Link instead of <a> */}
-          <Link className="btn" to={`/projects/${id}`}>
+          <Link className="btn" to={`/projects/${projectPaths[id]}`}>
             View Project
           </Link>
         </div>

@@ -1,10 +1,11 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import EunoiaImg from "../images/EunoiaImg.png";
-import MeteorMate from "../images/MeteorMate.png";
+import MeteorMateImg from "../images/MeteorMate.png";
+import GDSCImg from "../images/GDSCImg.png";
+import ACM_Page1 from "../images/ACM_Page1.png";
 import "../css/Designs.css";
 
-// Export items array
 export const items = [
   {
     title: "Eunoia - Wellness Platform",
@@ -18,25 +19,21 @@ export const items = [
     id: 2,
     subtitle: "Designs for a student roommate matching platform.",
     tags: ["UI/UX", "Figma"],
-    image: MeteorMate,
-  },
-  {
-    title: "Personal Portfolio",
-    id: 5,
-    subtitle: "Design system and components for a personal portfolio.",
-    tags: ["UI/UX", "Figma"],
+    image: MeteorMateImg,
   },
   {
     title: "ACM Archives - Magazine",
     id: 3,
-    subtitle: "Designed pages in a magazine.",
+    subtitle: "Designed pages in a magazine using Canva.",
     tags: ["Branding", "Canva", "Graphic Design"],
+    image: ACM_Page1,
   },
   {
-    title: "Google Student Developer Club",
+    title: "GDSC UTD - Club Website",
     id: 4,
-    subtitle: "Designed promotional material and created.",
-    tags: ["Branding", "Canva", "Graphic Design"],
+    subtitle: "Designed the official website for the Google Developer Student Club.",
+    tags: ["Branding", "UI/UX", "Figma"],
+    image: GDSCImg,
   },
 ];
 
@@ -46,8 +43,6 @@ export default function Designs() {
       <h1>Designs</h1>
       <p className="small">A showcase of my creative work</p>
 
-
-      {/* existing project cards */}
       <div className="grid">
         {items.map((it, i) => (
           <ProjectCard key={i} {...it} />
