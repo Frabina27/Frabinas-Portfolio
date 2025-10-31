@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
 
 :root{
-  --bg-1: #9fa5d5;
-  --bg-2: #b488bf;
+  --bg-1: #9f83ae;
+  --bg-2: #484648;
   --glass: rgba(255,255,255,0.04);
   --glass-border: rgba(255,255,255,0.06);
-  --sky: #ffffff; /* no more blue just white */
   --text: #ffffff;
 }
 
@@ -65,7 +64,7 @@ body{
 
 /* Buttons */
 .btn {
-  background: rgba(255,255,255,0.06);
+  background: var(--glass-border);
   border: 1px solid rgba(255,255,255,0.08);
   color: var(--text);
   padding: 10px 16px;
