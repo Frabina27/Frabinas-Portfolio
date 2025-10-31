@@ -1,19 +1,23 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default function Navbar(){
-  const { pathname } = useLocation();
+export default function Navbar() {
   return (
-    <header className="navbar">
-      <div className="nav-inner card">
-        <div className="brand">Frabina</div>
-        <nav className="nav-links">
-          <Link to="/" className={"nav-link" + (pathname==='/'? ' active':'')}>Home</Link>
-          <Link to="/resume" className={"nav-link" + (pathname==='/resume'? ' active':'')}>Resume</Link>
-          <Link to="/designs" className={"nav-link" + (pathname==='/designs'? ' active':'')}>Designs</Link>
-          <Link to="/projects" className={"nav-link" + (pathname==='/projects'? ' active':'')}>Projects</Link>
-        </nav>
+    <nav className="navbar">
+      <div className="nav-inner">
+        {/* Brand with heart */}
+        <div className="brand">
+          <span className="heart">♡</span> Frabina
+        </div>
+
+        {/* Right-aligned nav links */}
+        <div className="nav-links">
+          <Link className="nav-link" to="/">Home</Link>
+          <Link className="nav-link" to="/projects">Projects</Link>
+          <Link className="nav-link" to="/designs">Designs</Link>
+          <Link className="nav-link" to="/resume">Resume</Link>
+        </div>
       </div>
-    </header>
+    </nav>
   );
 }

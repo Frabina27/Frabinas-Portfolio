@@ -1,12 +1,47 @@
+/* === GLOBAL STYLES === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 72px;
+}
+
+/* === DOWNLOAD RESUME/VIEW PROJECTS BUTTONS === */
+.btn {
+  background: rgba(215, 198, 198, 0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--text);
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: var(--text);
+  color: #072033;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(8,28,45,0.35);
+}
+
 /* === HERO SECTION === */
 .hero-section {
-  min-height: auto; /* remove forced full height */
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-  padding-top: 20px;   
-  padding-bottom: 20px; 
+  padding: 20px 0;
 }
 
 .hero-left {
@@ -20,53 +55,33 @@
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.2;
-  color: var(--text);
+  color: var(--text); 
   margin-bottom: 32px;
 }
 
 .accent {
-  color: var(--sky);
+  color: var(--text); 
 }
 
 .typed-text {
-  border-right: 2px solid var(--sky); /* cursor effect */
+  border-right: 2px solid var(--text); 
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
 }
 
-/* Buttons */
+.hero-description {
+  max-width: 500px;
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
 .hero-buttons {
   display: flex;
   gap: 16px;
   margin-bottom: 24px;
-}
-
-.btn {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.15);
-  color: var(--text);
-  padding: 12px 22px;
-  border-radius: 10px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-
-.btn:hover {
-  background: var(--sky);
-  color: #072033;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(8, 28, 45, 0.35);
-}
-
-/* Body text */
-.hero-description {
-  max-width: 500px;
-  font-size: 1.05rem;
-  color: rgba(230,238,248,0.9);
-  line-height: 1.6;
-  margin-top: 8px;
 }
 
 /* === FLOATING IMAGE === */
@@ -83,14 +98,14 @@
   height: 280px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 40px rgba(168,216,255,0.25);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
   animation: float 3s ease-in-out infinite;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .floating-image:hover {
   transform: translateY(-8px) scale(1.05);
-  box-shadow: 0 15px 45px rgba(168,216,255,0.35);
+  box-shadow: 0 15px 45px rgba(255, 255, 255, 0.35);
 }
 
 .floating-image::before {
@@ -132,7 +147,7 @@
   border-radius: 14px;
   padding: 24px;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
 .skill-card:hover {
@@ -141,13 +156,13 @@
 }
 
 .skill-card h3 {
-  color: var(--sky);
+  color: var(--text);
   font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
 .skill-card p {
-  color: rgba(230,238,248,0.9);
+  color: rgba(255, 255, 255, 0.85); 
   font-size: 1rem;
 }
 
@@ -172,8 +187,4 @@
     flex-direction: column;
     gap: 20px;
   }
-
-
-
-
 }

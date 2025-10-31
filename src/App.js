@@ -7,6 +7,10 @@ import Designs from "./pages/Designs";
 import Resume from "./pages/Resume";
 import ProjectDetails from "./pages/ProjectDetails";
 import Eunoia from "./pages/Eunoia";
+import MeteorMate from "./pages/MeteorMate";
+import PersonalPortfolio from "./pages/PersonalPortfolio";
+import ACMArchives from "./pages/ACMArchives";
+import GDSC from "./pages/GDSC";
 
 
 export default function App() {
@@ -24,7 +28,11 @@ export default function App() {
             <Route path="/designs" element={<Designs />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/projects/1" element={<Eunoia />} />
-        </Routes>
+            <Route path="/projects/2" element={<MeteorMate />} />
+            <Route path="/projects/3" element={<ACMArchives />} />
+            <Route path="/projects/4" element={<GDSC />} />
+            <Route path="/projects/5" element={<PersonalPortfolio />} />
+          </Routes>
         </div>
       </Router>
     </>

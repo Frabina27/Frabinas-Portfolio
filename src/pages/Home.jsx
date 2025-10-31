@@ -1,7 +1,8 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import FrabinaPfp from "../images/FrabinaPfp.png";
-import "./Home.css";
+import "../css/Home.css";
+
 
 export default function Home() {
   return (
@@ -27,9 +28,15 @@ export default function Home() {
           </h1>
 
           <div className="hero-buttons">
-            <a href="/resume" className="btn" download>
+            <a
+              href="/resume.pdf"
+              className="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
               Download My Resume
-            </a>
+          </a>
             <a href="/projects" className="btn">
               View Projects
             </a>

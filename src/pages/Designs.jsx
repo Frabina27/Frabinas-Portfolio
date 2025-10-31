@@ -1,6 +1,8 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import EunoiaImg from "../images/EunoiaImg.png";
+import MeteorMate from "../images/MeteorMate.png";
+import "../css/Designs.css";
 
 // Export items array
 export const items = [
@@ -16,6 +18,7 @@ export const items = [
     id: 2,
     subtitle: "Designs for a student roommate matching platform.",
     tags: ["UI/UX", "Figma"],
+    image: MeteorMate,
   },
   {
     title: "Personal Portfolio",
@@ -44,7 +47,7 @@ export default function Designs() {
       <p className="small">A showcase of my creative work</p>
 
 
-      {/* Your existing project cards */}
+      {/* existing project cards */}
       <div className="grid">
         {items.map((it, i) => (
           <ProjectCard key={i} {...it} />

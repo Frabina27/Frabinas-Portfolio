@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
 
 :root{
-  --bg-1: #112250;
-  --bg-2: #3c5070;
+  --bg-1: #9fa5d5;
+  --bg-2: #b488bf;
   --glass: rgba(255,255,255,0.04);
   --glass-border: rgba(255,255,255,0.06);
-  --sky: #a8d8ff; /* light sky blue */
-  --text: #e6eef8;
+  --sky: #ffffff; /* no more blue just white */
+  --text: #ffffff;
 }
 
+/* Background content overall */
 .background {
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(180deg, #1e1e2f, #9393c1); /* new gradient */
+  background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,11 +24,10 @@
 }
 
 * { box-sizing: border-box; }
-html,body,#root { height: 100%; margin: 0; padding: 0; }
+html, body, #root { height: 100%; margin: 0; padding: 0; }
 
 body{
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,31 +41,29 @@ body{
   margin: 0 auto;
   padding: 28px;
 }
+
 .app-content {
   position: relative;
   z-index: 1;
 }
 
+/* Cards */
 .card {
-  background: rgba(255, 255, 255, 0.15);       /* translucent background */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* frosted border */
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(251, 251, 251, 0.3);
   border-radius: 16px;
-  backdrop-filter: blur(15px) saturate(150%); /* frosted effect */
+  backdrop-filter: blur(15px) saturate(150%);
   -webkit-backdrop-filter: blur(15px) saturate(150%);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);  /* depth */
   padding: 20px;
-  color: #ffffff;                               /* text color */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Optional hover effect */
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(168,216,255,0.28);
 }
 
-
-/* Hover styles */
+/* Buttons */
 .btn {
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.08);
@@ -79,70 +77,89 @@ body{
   text-decoration: none;
 }
 .btn:hover {
-  background: var(--sky);
+  background: var(--text);
   color: #072033;
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(168,216,255,0.35);
 }
 
-/* Nav */
+/* === NAVBAR === */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 72px;
+  top: 20px; /* push down slightly from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* adjust width to your liking (60–90% looks nice) */
+  max-width: 900px;
+  height: 64px;
+  border-radius: 50px; /* soft pill shape */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background: rgba(255, 255, 255, 0.1); /* translucent glass */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(6px);
+
+  transition: all 0.3s ease;
 }
+
+/* Make it “pop” slightly when hovered */
+.navbar:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
 .nav-inner {
-  width: 100%;
-  max-width: 1100px;
-  padding: 10px 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
 }
+
+/* Optional: smaller brand for balance */
 .brand {
-  font-weight: 800;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: var(--text);
 }
+
 .nav-links {
   display: flex;
-  gap: 18px;
+  gap: 24px;
 }
+
 .nav-link {
   position: relative;
   color: var(--text);
   text-decoration: none;
   font-weight: 600;
+  letter-spacing: 0.3px;
   padding: 6px 8px;
-  transition: color .22s ease;
+  transition: color 0.2s ease;
 }
-.nav-link::after{
+
+.nav-link::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -6px;
   height: 2px;
   width: 0%;
-  background: var(--sky);
-  transition: width .24s ease;
-}
-.nav-link:hover {
-  color: var(--sky);
-}
-.nav-link:hover::after{
-  width: 100%;
+  background: var(--text);
+  transition: width 0.3s ease;
 }
 
-/* Card hover */
-.card-hover:hover {
-  transform: translateY(-8px) scale(1.02);
-  border-color: var(--sky);
-  box-shadow: 0 18px 40px rgba(168,216,255,0.28);
+.nav-link:hover {
+  color: var(--text);
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 /* Project grid */
@@ -153,13 +170,11 @@ body{
   margin-top: 18px;
 }
 
-/* typography */
+/* Typography */
 h1, h2, h3 { margin: 0 0 10px 0; }
 p { margin: 0 0 12px 0; color: rgba(230,238,248,0.9); }
 
-/* small helpers */
+/* Small helpers */
 .center { text-align: center; }
 .row { display:flex; gap:12px; align-items:center; }
 .small { font-size:14px; color:rgba(230,238,248,0.7); }
-
-
