@@ -1,20 +1,24 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
+import "../css/Designs.css"; // same styling!
 
-export default function Projects(){
+export default function Projects() {
   const items = [
-    {title:'Weather App', subtitle:'A responsive weather app using public APIs.', tags:['React','API']},
-    {title:'Virtual Voice Assistant', subtitle:'Prototype voice assistant for desktop.', tags:['Python','API']},
-    {title:'Python Guessing Game', subtitle:'One of my favorite terminal guessing games.', tags:['Python']},
-    {title:'Galaga Clone', subtitle:'Arcade shooter remake using Python.', tags:['JavaScript','Python']},
-    {title:'Snake Game', subtitle:'Classic Snake game remake..', tags:['C++']},
+    { title: "Prodigy - HACKUTD", id: 5, subtitle: "Machine learning intern project.", tags: ["Python", "ML"] },
+    { title: "Weather App", id: 6, subtitle: "Fetches live weather data.", tags: ["React", "API"] },
+    { title: "Voice Assistant", id: 7, subtitle: "Desktop AI assistant.", tags: ["Python"] },
+    { title: "Guessing Game", id: 8, subtitle: "Fun Python terminal game.", tags: ["Python"] },
+    { title: "Snake Game", id: 9, subtitle: "Retro snake remake.", tags: ["C++"] },
   ];
+
   return (
-    <div>
+    <div className="designs-page">
       <h1>Projects</h1>
-      <p className="small">A few of my personal/academic projects!</p>
+      <p className="small">A showcase of my technical work</p>
       <div className="grid">
-        {items.map((it,i) => <ProjectCard key={i} {...it} />)}
+        {items.map((it, i) => (
+          <ProjectCard key={i} {...it} />
+        ))}
       </div>
     </div>
   );

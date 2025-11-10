@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// Map numeric IDs to string-based paths
 const projectPaths = {
   1: "eunoia",
   2: "meteormate",
   3: "acmarchives",
   4: "gdsc",
+  5: "prodigy",
+  6: "weather",
+  7: "voice",
+  8: "guessing",
+  9: "snake",
 };
 
 export default function ProjectCard({ id, title, subtitle, tags, image }) {
@@ -36,12 +40,16 @@ export default function ProjectCard({ id, title, subtitle, tags, image }) {
         )}
       </div>
 
-      <div style={{ paddingTop: 12 }}>
+      <div style={{ paddingTop: 12, color: "black" }}>
         <div className="row" style={{ justifyContent: "space-between" }}>
-          <h3>{title}</h3>
-          <div className="small">{tags?.join(" • ")}</div>
+          <h3 style={{ color: "black" }}>{title}</h3>
+          <div className="small" style={{ color: "black" }}>
+            {tags?.join(" • ")}
+          </div>
         </div>
-        <p className="small" style={{ marginTop: 8 }}>{subtitle}</p>
+        <p className="small" style={{ marginTop: 8, color: "black" }}>
+          {subtitle}
+        </p>
 
         <div style={{ marginTop: 12 }}>
           <Link className="btn" to={`/projects/${projectPaths[id]}`}>
