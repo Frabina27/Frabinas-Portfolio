@@ -4,6 +4,9 @@ import EunoiaFT1IMG1 from "../images/EunoiaFT1IMG1.png";
 import EunoiaDashImg from "../images/EunoiaDash.png";
 import EunoiaFT2IMG1 from "../images/EunoiaFT2IMG1.png";
 import EunoiaFT3IMG1 from "../images/EunoiaFT3IMG1.png";
+import EunoiaFT4 from "../images/EunoiaFT4.png";
+import EunoiaFT4IMG1 from "../images/EunoiaFT4IMG1.png";
+
 import "../css/Designs.css";
 
 export default function Eunoia() {
@@ -104,9 +107,8 @@ export default function Eunoia() {
       <section className="iteration">
         <h2>Feature 2: Daily Tasks</h2>
         <p>
-          Refined interface for accessibility and clarity while keeping the retro 8-bit charm. 
-          Added avatars, team progress tracking, and smoother interactions. Addressed prototyping challenges and finalized visual storytelling.
-        </p>
+          We designed Daily Tasks to help users build healthy habits and stay productive every day.
+          From drinking enough water and taking a walk to using the Pomodoro timer, completing tasks earns coins and motivates users to keep up with their daily goals.        </p>
         <div className="iteration-images">
         <img src={EunoiaFT2IMG1} alt="Feature 1" style={{ width: "50%", margin: "12px 0" }} />
         </div>
@@ -116,11 +118,22 @@ export default function Eunoia() {
       <section className="iteration">
         <h2>Feature 3: Stats Overview</h2>
         <p>
-          Refined interface for accessibility and clarity while keeping the retro 8-bit charm. 
-          Added avatars, team progress tracking, and smoother interactions. Addressed prototyping challenges and finalized visual storytelling.
-        </p>
+          We created a Stats Overview so users can see how they stack up against others in the company.
+          Track who’s completing their daily tasks, earn recognition, and get motivated by seeing your progress climb the leaderboard        </p>
         <div className="iteration-images">
         <img src={EunoiaFT3IMG1} alt="Feature 1" style={{ width: "50%", margin: "12px 0" }} />
+        </div>
+      </section>
+
+      {/* Feature 3 */}
+      <section className="iteration">
+        <h2>Feature 4: Character Customization!</h2>
+        <p>
+          We built Character Customization so users can bring their avatars to life.
+          Use the coins you earn from completing daily tasks to unlock outfits, accessories, and fun items! Which makes the characters fully customizable while maintaining motivation to reach daily wellness goals!</p>
+        <div className="iteration-images">
+        <img src={EunoiaFT4} alt="Feature 1" style={{ width: "45%", margin: "12px 0", marginRight: "4%" }} />
+        <img src={EunoiaFT4IMG1} alt="Feature 1" style={{ width: "45%", margin: "12px 0" }} />
         </div>
       </section>
 
@@ -136,7 +149,7 @@ export default function Eunoia() {
       <section className="project-section">
         <h2>What We Learned</h2>
         <p>
-          Learned to build dynamic prototypes in Figma, create variant-based interactions, and tell a story visually. 
+          I learned to build dynamic prototypes in Figma, create variant-based interactions, and tell a story visually. 
           The experience enhanced our understanding of gamification, accessibility, and interactive design.
         </p>
       </section>

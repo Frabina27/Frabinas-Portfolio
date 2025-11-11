@@ -62,11 +62,11 @@ export default function Prodigy() {
         <h2>How We Built It</h2>
         <div className="info-card">
           <ul>
-            <li>⚛️ React.js for a dynamic, responsive front-end</li>
-            <li>⚡ Vite for a fast development environment</li>
-            <li>🔥 Flask for lightweight backend APIs</li>
-            <li>🔗 Axios to handle communication between front-end and backend</li>
-            <li>🎨 Custom CSS for a clean, intuitive interface</li>
+            <li>React.js for a dynamic, responsive front-end</li>
+            <li>Vite for a fast development environment</li>
+            <li>Flask for lightweight backend APIs</li>
+            <li>Axios to handle communication between front-end and backend</li>
+            <li>Custom CSS for a clean, intuitive interface</li>
           </ul>
         </div>
       </section>
