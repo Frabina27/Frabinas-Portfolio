@@ -7,7 +7,29 @@ export default function Resume() {
     <div className="resume-container">
       <div className="resume-header">
         <h1>Resume</h1>
-        <p className="small">My professional journey and experiences</p>
+        <p className="small">My professional journey</p>
+      </div>
+<div className="section-divider">
+        <h2>Education</h2>
+      </div>
+
+      <div className="timeline">
+        <div className="timeline-item">
+          <div className="timeline-card">
+            <div className="timeline-header">
+              <div className="timeline-title">
+                <h3>The University of Texas at Dallas</h3>
+                <div className="timeline-subtitle">Bachelor's Degree in Computer Science</div>
+              
+              </div>
+              <div className="timeline-date">Expected: May 2027</div>
+            </div>
+            <div className="timeline-content">
+              <p>Relevant coursework: Software Engineering, Data Structures & Algorithms, Discrete Math, Programming Paradigms</p>
+              <p>Minor in STEM Education & Certification in Cyber Defense</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* WORK EXPERIENCE SECTION */}
@@ -54,15 +76,15 @@ export default function Resume() {
           <div className="timeline-card">
             <div className="timeline-header">
               <div className="timeline-title">
-                <h3>Previous Role</h3>
-                <div className="timeline-subtitle">Position Title</div>
+                <h3>Lavner Education</h3>
+                <div className="timeline-subtitle">Curriculum Developer & STEM Instructor</div>
               </div>
-              <div className="timeline-date">Month Year - Month Year</div>
+              <div className="timeline-date">June 2024 - May 2025</div>
             </div>
             <div className="timeline-content">
-              <p>Description of your responsibilities and achievements</p>
-              <p>Key accomplishment or project you worked on</p>
-              <p>Impact you made or skills you developed</p>
+              <p>Designed and implemented learning materials to enhance knowledge retention </p>
+              <p>Utilized data-driven insights to evaluate program effectiveness and improved content</p>
+              <p>Instructed over 20 students in Lego Robotics, Scripting, Tech Stocks, and Cyber Security </p>
             </div>
           </div>
         </div>
@@ -71,14 +93,14 @@ export default function Resume() {
           <div className="timeline-card">
             <div className="timeline-header">
               <div className="timeline-title">
-                <h3>Another Previous Role</h3>
-                <div className="timeline-subtitle">Position Title</div>
+                <h3>The MSR Group</h3>
+                <div className="timeline-subtitle">Customer Service Representative</div>
               </div>
-              <div className="timeline-date">Month Year - Month Year</div>
+              <div className="timeline-date">July 2022 - April 2024</div>
             </div>
             <div className="timeline-content">
-              <p>Description of your responsibilities and achievements</p>
-              <p>Key accomplishment or project you worked on</p>
+              <p>Managed and organized client data, gathering key information, identifying, and reporting service gaps to improve customer satisfaction within companies</p>
+              <p>Demonstrated strong interpersonal skills by addressing concerns and providing timely responses to clients</p>
               <p>Impact you made or skills you developed</p>
             </div>
           </div>
@@ -112,56 +134,15 @@ export default function Resume() {
           <div className="timeline-card">
             <div className="timeline-header">
               <div className="timeline-title">
-                <h3>Club Name</h3>
-                <div className="timeline-subtitle">Your Role</div>
+                <h3>Google Student Developer Club</h3>
+                <div className="timeline-subtitle">Director of Marketing & Events</div>
               </div>
-              <div className="timeline-date">Month Year - Present</div>
+              <div className="timeline-date">August 2024 - Present</div>
             </div>
             <div className="timeline-content">
-              <p>Description of your involvement and contributions</p>
-              <p>Key projects or initiatives you led or participated in</p>
-              <p>Skills developed or impact made through this organization</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-card">
-            <div className="timeline-header">
-              <div className="timeline-title">
-                <h3>Another Organization</h3>
-                <div className="timeline-subtitle">Member / Committee Role</div>
-              </div>
-              <div className="timeline-date">Month Year - Month Year</div>
-            </div>
-            <div className="timeline-content">
-              <p>Description of your involvement and contributions</p>
-              <p>Key projects or initiatives you led or participated in</p>
-              <p>Skills developed or impact made through this organization</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* EDUCATION SECTION */}
-      <div className="section-divider">
-        <h2>Education</h2>
-      </div>
-
-      <div className="timeline">
-        <div className="timeline-item">
-          <div className="timeline-card">
-            <div className="timeline-header">
-              <div className="timeline-title">
-                <h3>University Name</h3>
-                <div className="timeline-subtitle">Bachelor's Degree in Your Major</div>
-              </div>
-              <div className="timeline-date">Expected Graduation</div>
-            </div>
-            <div className="timeline-content">
-              <p>GPA: X.XX (if you want to include it)</p>
-              <p>Relevant coursework: Course 1, Course 2, Course 3</p>
-              <p>Honors or awards received</p>
+              <p>Lead event planning and promotion for all GDSC initiatives and workshops</p>
+              <p>Collaborated with technical and design teams to create marketing materials and manage outreach</p>
+              <p>Managed events and logistics to increase student engagement across events</p>
             </div>
           </div>
         </div>

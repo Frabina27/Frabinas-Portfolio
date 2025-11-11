@@ -1,14 +1,40 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import "../css/Designs.css"; // same styling!
+import "../css/Designs.css";
+import ProdigyImg from "../images/ProdigyImg.jpg";
 
 export default function Projects() {
   const items = [
-    { title: "Prodigy - HACKUTD", id: 5, subtitle: "Machine learning intern project.", tags: ["Python", "ML"] },
-    { title: "Weather App", id: 6, subtitle: "Fetches live weather data.", tags: ["React", "API"] },
-    { title: "Voice Assistant", id: 7, subtitle: "Desktop AI assistant.", tags: ["Python"] },
-    { title: "Guessing Game", id: 8, subtitle: "Fun Python terminal game.", tags: ["Python"] },
-    { title: "Snake Game", id: 9, subtitle: "Retro snake remake.", tags: ["C++"] },
+    { 
+      title: "Prodigy - HACKUTD", 
+      id: 5, 
+      subtitle: "Platform for Project Managers.", 
+      tags: ["Python", "ML"],
+      image: ProdigyImg,
+    },
+    { 
+      title: "Weather App", 
+      id: 6, 
+      subtitle: "Fetches live weather data.", 
+      tags: ["React", "API"] 
+    },
+    { 
+      title: "Voice Assistant", 
+      id: 7, 
+      subtitle: "Desktop AI assistant.", 
+      tags: ["Python"] 
+    },
+    { 
+      title: "Guessing Game", 
+      id: 8, 
+      subtitle: "Fun Python terminal game.", 
+      tags: ["Python"] 
+    },
+    { title: "Snake Game", 
+      id: 9, 
+      subtitle: "Retro snake remake.", 
+      tags: ["C++"] 
+    },
   ];
 
   return (
