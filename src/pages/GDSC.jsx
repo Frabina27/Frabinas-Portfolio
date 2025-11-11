@@ -1,5 +1,9 @@
 import React from "react";
-import GDSCImg from "../images/GDSCImg.png";
+import GDSCImg from "../images/GDSC/GDSCImg.png";
+import GDSCevent from "../images/GDSC/GDSCevent.png";
+import GDSCpage from "../images/GDSC/GDSCpage.png";
+
+
 import "../css/Designs.css";
 
 export default function GDSC() {
@@ -44,88 +48,39 @@ export default function GDSC() {
         </div>
       </section>
 
-      <section className="project-section">
-        <h2>Main Goals</h2>
-        <div className="info-card">
-          <p>
-            - Provide clear, accessible information about upcoming workshops.<br />
-            - Maintain an archive of past events for students to review.<br />
-            - Promote club engagement and simplify access to resources and event registration.
-          </p>
-        </div>
-      </section>
 
-      <section className="project-section">
-        <h2>Design Decisions</h2>
-        <div className="info-card">
-          <p>
-            We prioritized readability and simplicity, creating a modern layout with soft color accents to highlight key information. 
-            Navigation was structured around primary user goals: discovering events, accessing resources, and learning about the club. 
-            Components were designed modularly so the website could scale with future workshops and events.
-          </p>
-        </div>
-      </section>
+{/* Design Process */}
+<section className="design-process">
+  <h2>Design Process</h2>
+  <p>
+    The design process began with understanding the goals of GDSC UTD 
+    to create a space where students could explore upcoming events, 
+    learn about the team, and understand the benefits of joining the club. 
+    After gathering feedback from team members, I moved to high-fidelity 
+    prototypes in Figma. The design emphasizes simplicity, accessibility, 
+    and alignment with the club’s mission of encouraging innovation and 
+    collaboration.
+  </p>
+</section>
 
-      <hr className="section-divider" />
-
-      {/* Website Components */}
-      <section className="design-process">
-        <h2>Website Components</h2>
-        <div className="process-steps">
-          <div className="step-card">
-            <h4>Homepage</h4>
-            <p>Highlights upcoming workshops, announcements, and quick navigation to key sections.</p>
-          </div>
-          <div className="step-card">
-            <h4>Events Page</h4>
-            <p>Lists upcoming and past events with dates, descriptions, and links to resources or registration.</p>
-          </div>
-          <div className="step-card">
-            <h4>About Page</h4>
-            <p>Provides information about the club’s mission, team, and contact details.</p>
-          </div>
-          <div className="step-card">
-            <h4>Resources</h4>
-            <p>Centralized location for slides, workshop materials, and external learning links.</p>
-          </div>
-        </div>
-      </section>
-
-      <hr className="section-divider" />
-
-      {/* Development Process */}
-      <section className="iteration">
-        <h2>Design Process</h2>
-        <p>
-          Designed entirely in Figma, focusing on a user-centered approach. 
-          Started with understanding student needs and researching existing club websites. 
-          Created wireframes, low-fidelity prototypes, and then high-fidelity designs, iterating based on feedback from club leaders and peers.
-        </p>
-      </section>
-
-      <section className="iteration">
-        <h2>Challenges</h2>
-        <p>
-          Prioritizing the most important information without overwhelming the user, 
-          and creating a layout that could accommodate both upcoming and past events. 
-          Ensuring consistency and scalability in the design was a key focus.
-        </p>
-      </section>
-
-      <section className="iteration">
-        <h2>Accomplishments</h2>
-        <p>
-          Successfully designed a clean, user-friendly website for GDSC UTD. 
-          The design helps students quickly access information and encourages participation in club events.
-        </p>
-      </section>
-
-      <section className="iteration">
-        <h2>What I Learned</h2>
-        <p>
-          Learned how to design modular, student-focused websites, structure event-based content clearly, and use Figma to translate user research into actionable design components.
-        </p>
-      </section>
+<hr className="section-divider" />
+<section className="project-section">
+  <h2>Landing Page Design</h2>
+  <p>
+    The landing page was designed to immediately capture GDSC UTD’s identity which is
+    energetic, inclusive, and innovation-driven. It features a clean hero section 
+    with bold typography, the GDSC color palette, and clear calls to action that 
+    guide users to upcoming events and club information. Visual hierarchy and 
+    white space were carefully balanced to make the content easy to scan while 
+    maintaining a modern, welcoming feel that reflects the club’s spirit of 
+    collaboration and creativity.
+  </p>
+</section>
+      <img
+        src={GDSCpage}
+        alt="GDSC Website Screenshot"
+        style={{ width: "100%", borderRadius: 12, margin: "20px 0" }}
+      />
 
     </div>
   );

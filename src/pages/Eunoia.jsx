@@ -145,15 +145,6 @@ export default function Eunoia() {
           We are proud of designing Eunoia from the ground up, creating a full 8-bit inspired interface through collaboration, creativity, and persistence.
         </p>
       </section>
-
-      <section className="project-section">
-        <h2>What We Learned</h2>
-        <p>
-          I learned to build dynamic prototypes in Figma, create variant-based interactions, and tell a story visually. 
-          The experience enhanced our understanding of gamification, accessibility, and interactive design.
-        </p>
-      </section>
-
     </div>
   );
 }

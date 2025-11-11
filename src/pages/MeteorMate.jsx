@@ -1,5 +1,11 @@
 import React from "react";
 import MeteorMateImg from "../images/MeteorMate.png";
+import MMCreateAccount from "../images/MMCreateAccount.png";
+import MMPreferences from "../images/MMPreferences.png";
+import MMProfile from "../images/MMProfile.png";
+import MMScreen from "../images/MMScreen.png";
+import MMQuestion from "../images/MMQuestion.png";
+
 import "../css/Designs.css";
 
 export default function MeteorMate() {
@@ -7,7 +13,7 @@ export default function MeteorMate() {
     <div className="project-page container">
 
       {/* Project Title */}
-      <h1>MeteorMate - Roommate Finder</h1>
+      <h1>ACM Development - MeteorMate</h1>
 
       {/* Project Description */}
       <p className="project-description">
@@ -28,6 +34,7 @@ export default function MeteorMate() {
         <p>
           Students often struggle to find roommates with compatible lifestyles and preferences. 
           MeteorMate was created to simplify this process, helping students connect with suitable roommates quickly and confidently.
+          We noticed that the current system was inefficient and stressful so we decided to create a new one!
         </p>
       </section>
 
@@ -45,10 +52,9 @@ export default function MeteorMate() {
         <h2>Main Features</h2>
         <div className="info-card">
           <p>
-            - Profile creation capturing lifestyle, habits, and personal preferences.<br />
-            - Compatibility matching through a question set.<br />
-            - Search & filter matches by dorm, major, habits, or interests.<br />
-            - Chat feature to connect with potential roommates directly.
+            • Profile creation capturing lifestyle, habits, and personal preferences.<br />
+            • Compatibility matching through a question set.<br />
+            • Search & filter matches by dorm, major, habits, or interests.<br />
           </p>
         </div>
       </section>
@@ -61,7 +67,7 @@ export default function MeteorMate() {
         <div className="process-steps">
           <div className="step-card">
             <h4>Empathize</h4>
-            <p>Interviewed students to understand roommate challenges and expectations.</p>
+            <p>Spoke with students to understand roommate challenges and expectations.</p>
           </div>
           <div className="step-card">
             <h4>Define</h4>
@@ -83,45 +89,59 @@ export default function MeteorMate() {
       </section>
 
       <hr className="section-divider" />
-      {/* Iteration 1 */}
+      {/* Feature 1 */}
       <section className="iteration">
-        <h2>Iteration 1</h2>
-        <p>
-          Initial designs focused on exploring gamified wellness components and pixel-art interface ideas. 
-          We refined color schemes and prioritized features like mood check-ins and progress tracking.
-        </p>
+        <h2>Page 1: Creat Account</h2>
+          <p>
+            We designed a simple and intuitive Create Account process so users can quickly sign up and start their MeteorMate journey. The flow emphasizes ease and clarity, making onboarding smooth for first-time users.        
+          </p>
         <div className="iteration-images">
-          <img src="../images/iteration1_1.png" alt="Iteration 1 Image 1" style={{ width: "100%", margin: "12px 0" }} />
-          <img src="../images/iteration1_2.png" alt="Iteration 1 Image 2" style={{ width: "100%", margin: "12px 0" }} />
+          <img src={MMCreateAccount} alt="Create Account Page" style={{ width: "100%", margin: "12px 0" }} />
         </div>
       </section>
 
-      {/* Iteration 2 */}
+      {/* Feature 2 */}
       <section className="iteration">
-        <h2>Iteration 2</h2>
+        <h2>Page 2: Profile</h2>
         <p>
-          Refined interface for accessibility and clarity while keeping the retro 8-bit charm. 
-          Added avatars, team progress tracking, and smoother interactions. Addressed prototyping challenges and finalized visual storytelling.
+          The Questionnaire helps users express their lifestyle preferences and expectations. By answering key questions, the system can generate better roommate matches, while the design keeps the experience simple and user-friendly. </p>
+        <div className="iteration-images">
+          <img src={MMProfile} alt="Profile Page" style={{ width: "100%", margin: "12px 0" }} />
+
+        </div>
+      </section>
+
+      {/* Feature 3 */}
+      <section className="iteration">
+        <h2>Page 3: Preferences</h2>
+        <p>
+          Users can build their Profile by adding personal details, preferences, and roommate habits. The profile setup is designed to be engaging while giving the system the information it needs to match users effectively.
         </p>
         <div className="iteration-images">
-          <img src="../images/iteration2_1.png" alt="Iteration 2 Image 1" style={{ width: "100%", margin: "12px 0" }} />
-          <img src="../images/iteration2_2.png" alt="Iteration 2 Image 2" style={{ width: "100%", margin: "12px 0" }} />
+          <img src={MMPreferences} alt="Preferences Page" style={{ width: "70%", margin: "12px 0" }} />
+          <img src={MMQuestion} alt="Question Page" style={{ width: "72%", margin: "12px 0" }} />
+
         </div>
       </section>
       
+
+      {/* Feature 4 */}
+      <section className="iteration">
+        <h2>Page 4: Main Page</h2>
+        <p>
+          The Main Page is the hub where users can explore potential matches and navigate the app. The current design is a work in progress, with placeholders and layout concepts ready for further refinement, ensuring that the final version will be fully interactive and polished. </p>
+        <div className="iteration-images">
+          <img src={MMScreen} alt="Main Page" style={{ width: "100%", margin: "12px 0" }} />
+
+        </div>
+      </section>
+
       {/* Development / Accomplishments */}
       <section className="iteration">
         <h2>Accomplishments</h2>
         <p>
           Successfully designed a complete Figma prototype for MeteorMate, addressing student needs for compatibility and communication. 
           Created a clean, engaging interface that guides users from creating profiles to finding and connecting with suitable roommates.
-        </p>
-      </section>
-
-      <section className="iteration">
-        <h2>What I Learned</h2>
-        <p>
-          Learned how to design user-focused platforms, create interactive prototypes in Figma, and translate research insights into functional UI flows for students.
         </p>
       </section>
 

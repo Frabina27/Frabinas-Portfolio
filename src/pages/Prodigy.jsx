@@ -24,7 +24,7 @@ export default function Prodigy() {
       <p className="project-description">
         Prodigy was built to simplify project management for teams that juggle multiple collaboration tools. 
         Instead of switching between Discord, Google Calendar, Slack, and Zoom, Prodigy provides one centralized space 
-        for managing tasks, tracking progress, and staying connected — all in one intuitive interface.
+        for managing tasks, tracking progress, and staying connected all in one intuitive interface.
       </p>
 
       {/* Main Image */}
@@ -38,7 +38,7 @@ export default function Prodigy() {
       <section className="project-section">
         <h2>Inspiration</h2>
         <p>
-          Being a project manager is tough — especially when every platform serves a different purpose. 
+          Being a project manager is so difficult especially when every platform serves a different purpose. 
           As students managing multiple group projects, we realized that most tools were fragmented and lacked 
           integration. Our goal with Prodigy was to create a unified platform that keeps teams organized, 
           tracks tasks in real-time, and streamlines productivity.
@@ -52,22 +52,22 @@ export default function Prodigy() {
           <p>
             Prodigy makes project management effortless by providing real-time updates on tasks, progress, 
             and deadlines across a shared workspace. Team members can stay aligned, view project timelines, 
-            and monitor completion metrics in one place — helping everyone stay on track without needing multiple apps.
+            and monitor completion metrics in one place helping everyone stay on track without needing multiple apps.
           </p>
         </div>
       </section>
 
-      {/* How We Built It */}
+       {/* How We Built It */}
       <section className="project-section">
         <h2>How We Built It</h2>
         <div className="info-card">
-          <ul>
-            <li>React.js for a dynamic, responsive front-end</li>
-            <li>Vite for a fast development environment</li>
-            <li>Flask for lightweight backend APIs</li>
-            <li>Axios to handle communication between front-end and backend</li>
-            <li>Custom CSS for a clean, intuitive interface</li>
-          </ul>
+          <p>
+            • React.js for a dynamic, responsive front-end<br />
+            • Vite for a fast development environment<br />
+            • Flask for lightweight backend APIs<br />
+            • Axios to handle communication between front-end and backend<br />
+            • Custom CSS for a clean, intuitive interface
+          </p>
         </div>
       </section>
 
@@ -76,8 +76,8 @@ export default function Prodigy() {
         <h2>Challenges We Ran Into</h2>
         <div className="info-card">
           <p>
-            Balancing all the features we wanted — live updates, AI integration, 
-            and a clean UI — while keeping the experience intuitive. Backend implementation and integrating AI were particularly challenging.
+            Balancing all the features we wanted such as live updates, AI integration, 
+            and a clean UI while keeping the experience intuitive was more difficult than we imagined. Backend implementation and integrating AI were particularly challenging.
           </p>
         </div>
       </section>

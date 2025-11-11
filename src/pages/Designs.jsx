@@ -2,8 +2,8 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import EunoiaImg from "../images/EunoiaImg.png";
 import MeteorMateImg from "../images/MeteorMate.png";
-import GDSCImg from "../images/GDSCImg.png";
-import ACM_Page1 from "../images/ACM_Page1.png";
+import GDSCImg from "../images/GDSC/GDSCImg.png";
+import ACM_Page3 from "../images/ACMno/ACM_Page3.png";
 import "../css/Designs.css";
 
 export const items = [
@@ -26,7 +26,7 @@ export const items = [
     id: 3,
     subtitle: "Designed pages in a magazine using Canva.",
     tags: ["Branding", "Canva", "Graphic Design"],
-    image: ACM_Page1,
+    image: ACM_Page3,
   },
   {
     title: "GDSC UTD - Club Website",
