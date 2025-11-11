@@ -1,5 +1,9 @@
 import React from "react";
-import EunoiaImg from "../images/EunoiaImg.png";
+import EunoiaImg from "../images/EunoiaImg.png"
+import EunoiaFT1IMG1 from "../images/EunoiaFT1IMG1.png";
+import EunoiaDashImg from "../images/EunoiaDash.png";
+import EunoiaFT2IMG1 from "../images/EunoiaFT2IMG1.png";
+import EunoiaFT3IMG1 from "../images/EunoiaFT3IMG1.png";
 import "../css/Designs.css";
 
 export default function Eunoia() {
@@ -11,24 +15,24 @@ export default function Eunoia() {
 
       {/* Project Description */}
       <p className="project-description">
-        Eunoia reimagines workplace wellness through play, aligning with the design prompt to create spaces that power people. 
+        Eunoia reimagines workplace wellness in a fun and unique way!
         Inspired by CBRE’s human-centered approach, we designed a gamified digital environment where mood check-ins and team growth feel like leveling up in a pixel adventure game. 
-        Our goal was to make workplace wellness interactive, accessible, and genuinely enjoyable.
+        Our goal was to make workplace wellness interactive, accessible, and enjoyable.
       </p>
 
       {/* Main Image */}
       <img
-        src={EunoiaImg}
+        src={EunoiaDashImg}
         alt="Eunoia Main"
-        style={{ width: "100%", borderRadius: 12, margin: "20px 0" }}
+        style={{ width: "75%", borderRadius: 12, margin: "20px 0"}}
       />
 
       {/* Project Details */}
       <section className="project-section">
         <h2>Background</h2>
         <p>
-          Eunoia was designed during a 24-hour design-a-thon to combat worker burnout by prioritizing breaks and wellness. 
-          The project aimed to transform team wellness into an engaging experience that encourages self-reflection, collaboration, and consistent progress.
+          Eunoia was designed during a 24-hour design-a-thon to combat remote worker burnout by prioritizing breaks, hydration, walks, and more! 
+          The project aimed to transform personal wellness into an engaging experience that encourages self-reflection, collaboration, and consistent progress.
         </p>
       </section>
 
@@ -37,7 +41,7 @@ export default function Eunoia() {
         <div className="info-card">
           <p>
             We researched workplace wellness trends and human-centered design practices, focusing on ways to make wellness fun and engaging. 
-            Key insights included the importance of mood tracking, visual feedback, and gamified incentives to encourage regular participation.
+            Key insights included the importance of mood tracking, visual feedback, and something to encourage regular participation.
           </p>
         </div>
       </section>
@@ -46,8 +50,8 @@ export default function Eunoia() {
         <h2>Competitive Analysis</h2>
         <div className="info-card">
           <p>
-            We analyzed existing wellness apps and gamified productivity tools, noting that most lacked emotional engagement or team collaboration features. 
-            Eunoia’s design addresses these gaps with interactive dashboards, avatars, and team-level progression.
+            We analyzed existing wellness apps and gamified productivity tools, noting that none of them provided the features we were looking for in one location.
+            Eunoia’s design addressed these gaps with interactive dashboards, avatars, and level progression.
           </p>
         </div>
       </section>
@@ -60,52 +64,63 @@ export default function Eunoia() {
         <div className="process-steps">
           <div className="step-card">
             <h4>Empathize</h4>
-            <p>Conducted research to understand employee wellness challenges and motivational triggers.</p>
+            <p>We initially conducted research to identify some of the problems with remote work which was lack of motivation and ease of burnout.</p>
           </div>
           <div className="step-card">
             <h4>Define</h4>
-            <p>Identified user goals: mood tracking, completing wellness challenges, and team engagement.</p>
+            <p>We identified user goals such as mood trakcing, wellness, and time management as well as break management.</p>
           </div>
           <div className="step-card">
             <h4>Ideate</h4>
-            <p>Brainstormed gamified solutions and visual storytelling ideas to make wellness fun.</p>
+            <p>We brainstormed many designs for our product but the 8-bit pixel theme stood out the most.</p>
           </div>
           <div className="step-card">
             <h4>Prototype</h4>
-            <p>Created interactive Figma prototypes emphasizing 8-bit pixel aesthetics and smooth user flows.</p>
+            <p>We created interactive Figma prototypes emphasizing 8-bit pixel aesthetics and smooth user flows.</p>
           </div>
           <div className="step-card">
             <h4>Test</h4>
-            <p>Gathered feedback to refine usability, visual clarity, and balance between retro style and modern design.</p>
+            <p>We gathered feedback to refine usability, clear up the visual design, and balance between retro 8-bit as well as modern work space.</p>
           </div>
         </div>
       </section>
 
       <hr className="section-divider" />
 
-      {/* Iteration 1 */}
+      {/* Feature 1 */}
       <section className="iteration">
-        <h2>Iteration 1</h2>
+        <h2>Feature 1: Pomodoro</h2>
         <p>
-          Initial designs focused on exploring gamified wellness components and pixel-art interface ideas. 
-          We refined color schemes and prioritized features like mood check-ins and progress tracking.
+          We realized how important time management is when working remotely 
+          We designed a pomodoro timer to help users stay on track with their work 
+          while also reminding them to take breaks.
         </p>
         <div className="iteration-images">
-          <img src="../images/iteration1_1.png" alt="Iteration 1 Image 1" style={{ width: "100%", margin: "12px 0" }} />
-          <img src="../images/iteration1_2.png" alt="Iteration 1 Image 2" style={{ width: "100%", margin: "12px 0" }} />
+        <img src={EunoiaFT1IMG1} alt="Feature 1" style={{ width: "50%", margin: "12px 0" }} />
         </div>
       </section>
 
-      {/* Iteration 2 */}
+      {/* Feature 2 */}
       <section className="iteration">
-        <h2>Iteration 2</h2>
+        <h2>Feature 2: Daily Tasks</h2>
         <p>
           Refined interface for accessibility and clarity while keeping the retro 8-bit charm. 
           Added avatars, team progress tracking, and smoother interactions. Addressed prototyping challenges and finalized visual storytelling.
         </p>
         <div className="iteration-images">
-          <img src="../images/iteration2_1.png" alt="Iteration 2 Image 1" style={{ width: "100%", margin: "12px 0" }} />
-          <img src="../images/iteration2_2.png" alt="Iteration 2 Image 2" style={{ width: "100%", margin: "12px 0" }} />
+        <img src={EunoiaFT2IMG1} alt="Feature 1" style={{ width: "50%", margin: "12px 0" }} />
+        </div>
+      </section>
+
+      {/* Feature 3 */}
+      <section className="iteration">
+        <h2>Feature 3: Stats Overview</h2>
+        <p>
+          Refined interface for accessibility and clarity while keeping the retro 8-bit charm. 
+          Added avatars, team progress tracking, and smoother interactions. Addressed prototyping challenges and finalized visual storytelling.
+        </p>
+        <div className="iteration-images">
+        <img src={EunoiaFT3IMG1} alt="Feature 1" style={{ width: "50%", margin: "12px 0" }} />
         </div>
       </section>
 
