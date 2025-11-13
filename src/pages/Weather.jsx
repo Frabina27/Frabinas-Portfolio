@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Designs.css";
-import ProdigyImg from "../images/ProdigyImg.jpg"; // temporary placeholder
+import WeatherIMG from "../images/WeatherAppIMG.png"; // temporary placeholder
 
 export default function WeatherApp() {
   const techStack = [
@@ -28,7 +28,7 @@ export default function WeatherApp() {
 
       {/* Main Image */}
       <img
-        src={ProdigyImg}
+        src={WeatherIMG}
         alt="Weather App Overview"
         style={{ width: "100%", borderRadius: 12, margin: "20px 0" }}
       />

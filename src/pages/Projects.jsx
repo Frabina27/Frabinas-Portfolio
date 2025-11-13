@@ -25,9 +25,9 @@ export default function Projects() {
       tags: ["Python"] 
     },
     { 
-      title: "Guessing Game", 
+      title: "Pomodoro", 
       id: 8, 
-      subtitle: "Fun Python terminal game.", 
+      subtitle: "Cute simple pomodoro timer.", 
       tags: ["Python"] 
     },
     { title: "Snake Game", 
