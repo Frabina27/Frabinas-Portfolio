@@ -10,7 +10,7 @@ const projectPaths = {
   6: "weather",
   7: "voice",
   8: "pomodoro",
-  9: "snake",
+  9: "galaga",
   10: "valorant",
 };
 

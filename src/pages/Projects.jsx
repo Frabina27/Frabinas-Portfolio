@@ -5,7 +5,7 @@ import ProdigyImg from "../images/ProdigyImg.jpg";
 import VoiceAssistantImg from "../images/VoiceAssistantImg.png";
 import WeatherAppImg from "../images/WeatherAppImg.png";
 import PomodoroImg from "../images/PomodoroIMG.png";
-
+import GalagaImg from "../images/Galaga/GalagaCover.png";
 
 export default function Projects() {
   const items = [
@@ -41,7 +41,8 @@ export default function Projects() {
       title: "Galaga", 
       id: 9, 
       subtitle: "Retro galactica remake", 
-      tags: ["C++"] 
+      tags: ["C++"],
+      image: GalagaImg,
     },
   ];
 
