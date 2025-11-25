@@ -1,4 +1,8 @@
 import React from "react";
+<<<<<<< Updated upstream
+=======
+import WeatherAppImg from "../images/WeatherAppImg.png";
+>>>>>>> Stashed changes
 import "../css/Designs.css";
 import WeatherIMG from "../images/WeatherAppIMG.png"; // temporary placeholder
 
@@ -13,23 +17,41 @@ export default function WeatherApp() {
     "Vite",
   ];
 
+<<<<<<< Updated upstream
+=======
+export default function WeatherApp() {
+>>>>>>> Stashed changes
   return (
     <div className="project-page container">
       {/* Project Title */}
+<<<<<<< Updated upstream
       <h1>Weather App - Real-Time Forecast Dashboard</h1>
+=======
+      <h1>Weather App</h1>
+>>>>>>> Stashed changes
 
       {/* Description */}
       <p className="project-description">
+<<<<<<< Updated upstream
         The Weather App was designed to deliver accurate, real-time weather updates 
         in a clean and intuitive interface. Users can search for any city and instantly 
         view the temperature, weather conditions, humidity, and wind speed. 
         The goal was to build a sleek, responsive dashboard that’s easy to use across all devices.
+=======
+        A simple and intuitive weather application that provides real-time forecasts, hourly updates, and location-based weather information. 
+        Designed to be clear, responsive, and easy to use for everyday weather tracking.
+>>>>>>> Stashed changes
       </p>
 
       {/* Main Image */}
       <img
+<<<<<<< Updated upstream
         src={WeatherIMG}
         alt="Weather App Overview"
+=======
+        src={WeatherAppImg}
+        alt="Weather App Main"
+>>>>>>> Stashed changes
         style={{ width: "100%", borderRadius: 12, margin: "20px 0" }}
       />
 
@@ -37,15 +59,21 @@ export default function WeatherApp() {
       <section className="project-section">
         <h2>Inspiration</h2>
         <p>
+<<<<<<< Updated upstream
           Weather impacts our daily lives — from what we wear to how we travel. 
           I wanted to create an app that provides essential weather information 
           in seconds without clutter or unnecessary visuals. 
           The project also gave me a chance to explore how APIs can bring real-world data into front-end projects.
+=======
+          The Weather App was built to give users fast access to accurate weather information. 
+          It focuses on simplicity, readability, and providing the most important details at a glance.
+>>>>>>> Stashed changes
         </p>
       </section>
 
       {/* What It Does */}
       <section className="project-section">
+<<<<<<< Updated upstream
         <h2>What It Does</h2>
         <div className="info-card">
           <p>
@@ -68,10 +96,18 @@ export default function WeatherApp() {
             • OpenWeatherMap API for accurate global weather information<br />
             • CSS for layout styling and weather-based color themes<br />
             • Vite for faster development and project setup
+=======
+        <h2>Research & Insights</h2>
+        <div className="info-card">
+          <p>
+            Explored common features in popular weather apps and identified user needs for quick forecasts, temperature trends, and visual clarity. 
+            Insights guided the design to prioritize essential information and clean layouts.
+>>>>>>> Stashed changes
           </p>
         </div>
       </section>
 
+<<<<<<< Updated upstream
       {/* Challenges */}
       <section className="project-section">
         <h2>Challenges I Faced</h2>
@@ -90,6 +126,68 @@ export default function WeatherApp() {
         <p>
           Successfully created a functional, responsive, and visually appealing weather dashboard 
           that connects to a real-world API and displays dynamic updates instantly.
+=======
+      <hr className="section-divider" />
+
+      {/* Design Process Steps */}
+      <section className="design-process">
+        <h2>Design Process</h2>
+        <div className="process-steps">
+          <div className="step-card">
+            <h4>Empathize</h4>
+            <p>Understood how users check weather and what information is most valuable to them.</p>
+          </div>
+          <div className="step-card">
+            <h4>Define</h4>
+            <p>Focused on key goals: fast access to forecasts, easy navigation, and visual clarity.</p>
+          </div>
+          <div className="step-card">
+            <h4>Ideate</h4>
+            <p>Brainstormed layout ideas, data visualization, and interactive features for daily use.</p>
+          </div>
+          <div className="step-card">
+            <h4>Prototype</h4>
+            <p>Created wireframes and clickable prototypes to test layout and functionality.</p>
+          </div>
+          <div className="step-card">
+            <h4>Test</h4>
+            <p>Gathered feedback to refine usability, mobile responsiveness, and overall readability.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr className="section-divider" />
+
+      {/* Iterations */}
+      <section className="iteration">
+        <h2>Iteration 1</h2>
+        <p>
+          Initial design focused on basic weather information and static icons. 
+          Feedback indicated the need for clearer visuals and interactive elements.
+        </p>
+        <div className="iteration-images">
+          <img src="../images/weather_iter1.png" alt="Iteration 1" style={{ width: "100%", margin: "12px 0" }} />
+        </div>
+      </section>
+
+      <section className="iteration">
+        <h2>Iteration 2</h2>
+        <p>
+          Added dynamic weather icons, hourly forecast graphs, and responsive layouts for mobile and desktop. 
+          The interface became more visually engaging and user-friendly.
+        </p>
+        <div className="iteration-images">
+          <img src="../images/weather_iter2.png" alt="Iteration 2" style={{ width: "100%", margin: "12px 0" }} />
+        </div>
+      </section>
+
+      {/* Inspiration & Learnings */}
+      <section className="project-section">
+        <h2>Inspiration & Learnings</h2>
+        <p>
+          Inspired by simplicity and user-centered design principles, this project taught me how to combine API data with clean, interactive interfaces. 
+          Learned the importance of clarity, responsiveness, and visual hierarchy in app design.
+>>>>>>> Stashed changes
         </p>
       </section>
 
