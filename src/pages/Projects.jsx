@@ -2,6 +2,10 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import "../css/Designs.css";
 import ProdigyImg from "../images/ProdigyImg.jpg";
+import VoiceAssistantImg from "../images/VoiceAssistantImg.png";
+import WeatherAppImg from "../images/WeatherAppImg.png";
+import PomodoroImg from "../images/PomodoroIMG.png";
+
 
 export default function Projects() {
   const items = [
@@ -16,21 +20,25 @@ export default function Projects() {
       title: "Weather App", 
       id: 6, 
       subtitle: "Fetches live weather data.", 
-      tags: ["React", "API"] 
+      tags: ["React", "API"],
+      image: WeatherAppImg,
     },
     { 
       title: "Voice Assistant", 
       id: 7, 
       subtitle: "Desktop AI assistant.", 
-      tags: ["Python"] 
+      tags: ["Python"],
+      image: VoiceAssistantImg,
     },
     { 
       title: "Pomodoro", 
       id: 8, 
       subtitle: "Cute simple pomodoro timer.", 
-      tags: ["Python"] 
+      tags: ["Python"],
+      image: PomodoroImg,
     },
-    { title: "Snake Game", 
+    { 
+      title: "Snake Game", 
       id: 9, 
       subtitle: "Retro snake remake.", 
       tags: ["C++"] 

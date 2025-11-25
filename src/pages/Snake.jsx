@@ -1,5 +1,5 @@
 import React from "react";
-import EunoiaImg from "../images/EunoiaImg.png";
+import EunoiaImg from "../images/Eunoia/EunoiaImg.png";
 import "../css/Designs.css";
 
 export default function Eunoia() {

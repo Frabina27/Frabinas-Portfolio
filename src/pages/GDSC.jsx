@@ -2,7 +2,7 @@ import React from "react";
 import GDSCImg from "../images/GDSC/GDSCImg.png";
 import GDSCevent from "../images/GDSC/GDSCevent.png";
 import GDSCpage from "../images/GDSC/GDSCpage.png";
-
+import GDSCWebsite from "../images/GDSC/GDSCWebsite.png";
 
 import "../css/Designs.css";
 
@@ -82,6 +82,20 @@ export default function GDSC() {
         style={{ width: "100%", borderRadius: 12, margin: "20px 0" }}
       />
 
+      <section className="design-process">
+  <h2>2nd Iteration</h2>
+  <p>
+    Here is another iteration of the landing page after some commentary from the technical team. 
+  </p>
+  <img
+        src={GDSCWebsite}
+        alt="GDSC Website Screenshot"
+        style={{ width: "100%", borderRadius: 12, margin: "20px 0" }}
+      />
+</section>
+
     </div>
+
+    
   );
 }

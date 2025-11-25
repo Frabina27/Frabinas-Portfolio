@@ -1,11 +1,11 @@
 import React from "react";
-import EunoiaImg from "../images/EunoiaImg.png"
-import EunoiaFT1IMG1 from "../images/EunoiaFT1IMG1.png";
-import EunoiaDashImg from "../images/EunoiaDash.png";
-import EunoiaFT2IMG1 from "../images/EunoiaFT2IMG1.png";
-import EunoiaFT3IMG1 from "../images/EunoiaFT3IMG1.png";
-import EunoiaFT4 from "../images/EunoiaFT4.png";
-import EunoiaFT4IMG1 from "../images/EunoiaFT4IMG1.png";
+import EunoiaImg from "../images/Eunoia/EunoiaImg.png"
+import EunoiaFT1IMG1 from "../images/Eunoia/EunoiaFT1IMG1.png";
+import EunoiaDashImg from "../images/Eunoia/EunoiaDash.png";
+import EunoiaFT2IMG1 from "../images/Eunoia/EunoiaFT2IMG1.png";
+import EunoiaFT3IMG1 from "../images/Eunoia/EunoiaFT3IMG1.png";
+import EunoiaFT4 from "../images/Eunoia/EunoiaFT4.png";
+import EunoiaFT4IMG1 from "../images/Eunoia/EunoiaFT4IMG1.png";
 
 import "../css/Designs.css";
 

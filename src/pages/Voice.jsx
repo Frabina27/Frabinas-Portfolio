@@ -1,12 +1,11 @@
 import React from "react";
 import "../css/Designs.css";
-import ProdigyImg from "../images/VoiceAssistantImg.png"; // replace with actual screenshot
+import VoiceImg from "../images/VoiceAssistantImg.png"; // replace with actual screenshot
 
 export default function VoiceVirtualAssistant() {
   const techStack = [
     "Python",
     "ElevenLabs API",
-    "dotenv",
     "Speech-to-Text",
     "Real-Time Audio",
   ];
@@ -27,7 +26,7 @@ export default function VoiceVirtualAssistant() {
 
       {/* Main Image */}
       <img
-        src={ProdigyImg}
+        src={VoiceImg}
         alt="Voice Assistant Interface"
         style={{ width: "50%", borderRadius: 12, margin: "20px 0" }}
       />
@@ -64,44 +63,10 @@ export default function VoiceVirtualAssistant() {
           <p>
             • Python for the main logic and integration<br />
             • ElevenLabs API for text-to-speech and agent creation<br />
-            • dotenv for secure API key management<br />
             • Callback functions to handle response flow<br />
             • Console output for debugging and monitoring live conversations
           </p>
         </div>
-      </section>
-
-      {/* Challenges */}
-      <section className="project-section">
-        <h2>Challenges I Faced</h2>
-        <div className="info-card">
-          <p>
-            Managing real-time audio input/output and handling interruptions 
-            during speech was complex. I also had to carefully manage API authentication 
-            and make sure the assistant stayed responsive without lag.
-          </p>
-        </div>
-      </section>
-
-      {/* Accomplishments */}
-      <section className="project-section">
-        <h2>Accomplishments</h2>
-        <p>
-          Successfully implemented a conversational AI that feels natural and responsive. 
-          The assistant handles live voice input and responds instantly — 
-          demonstrating the power of ElevenLabs’ voice technology combined with Python scripting.
-        </p>
-      </section>
-
-      {/* What I Learned */}
-      <section className="project-section">
-        <h2>What I Learned</h2>
-        <p>
-          Learned how to integrate voice APIs, manage audio streams, 
-          and securely handle environment variables in Python. 
-          This project strengthened my understanding of real-time communication systems 
-          and API-driven AI tools.
-        </p>
       </section>
 
       {/* Tech Stack */}
