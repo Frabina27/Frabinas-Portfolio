@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import EunoiaImg from "../images/EunoiaImg.png";
-import MeteorMateImg from "../images/MeteorMate.png";
+import MeteorMateImg from "../images/MM/MeteorMate.png";
 import GDSCImg from "../images/GDSC/GDSCImg.png";
 import ACM_Page3 from "../images/ACMno/ACM_Page3.png";
 import "../css/Designs.css";

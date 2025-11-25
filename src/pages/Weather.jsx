@@ -1,7 +1,6 @@
 import React from "react";
-import WeatherAppImg from "../images/WeatherAppImg.png";
 import "../css/Designs.css";
-import WeatherIMG from "../images/WeatherAppIMG.png"; // temporary placeholder
+import WeatherIMG from "../images/WeatherAppImg.png";
 
 export default function WeatherApp() {
   const techStack = [

@@ -1,10 +1,15 @@
 import React from "react";
-import MeteorMateImg from "../images/MeteorMate.png";
-import MMCreateAccount from "../images/MMCreateAccount.png";
-import MMPreferences from "../images/MMPreferences.png";
-import MMProfile from "../images/MMProfile.png";
-import MMScreen from "../images/MMScreen.png";
-import MMQuestion from "../images/MMQuestion.png";
+import MeteorMateImg from "../images/MM/MeteorMate.png";
+import MMCreateAccount from "../images/MM/MMCreateAccount.png";
+import MMPreferences from "../images/MM/MMPreferences.png";
+import MMProfile from "../images/MM/MMProfile.png";
+import MMScreen from "../images/MM/MMScreen.png";
+import MMQuestion from "../images/MM/MMQuestion.png";
+
+import MMScreenWhite from "../images/MM/MMScreenWhite.png";
+import MMQuestionWhite from "../images/MM/MMQuestionWhite.png";
+import MMPersonalityWhite from "../images/MM/MMPersonalityWhite.png";
+import MMCreateAccountWhite from "../images/MM/MMCreateAccountWhite.png";
 
 import "../css/Designs.css";
 
@@ -102,11 +107,12 @@ export default function MeteorMate() {
 
       {/* Feature 2 */}
       <section className="iteration">
-        <h2>Page 2: Profile</h2>
+        <h2>Page 2: Profile Creation</h2>
         <p>
-          The Questionnaire helps users express their lifestyle preferences and expectations. By answering key questions, the system can generate better roommate matches, while the design keeps the experience simple and user-friendly. </p>
+          The profile creation panel allows the user to input their year and major as well as their gender which can come into play in the pairing process later on. The white version matches MeteorMate Branding better so it is the more updated vesion. </p>
         <div className="iteration-images">
           <img src={MMProfile} alt="Profile Page" style={{ width: "100%", margin: "12px 0" }} />
+          <img src={MMCreateAccountWhite} alt="Profile Page" style={{ width: "100%", margin: "12px 0" }} />
 
         </div>
       </section>
@@ -118,8 +124,9 @@ export default function MeteorMate() {
           Users can build their Profile by adding personal details, preferences, and roommate habits. The profile setup is designed to be engaging while giving the system the information it needs to match users effectively.
         </p>
         <div className="iteration-images">
-          <img src={MMPreferences} alt="Preferences Page" style={{ width: "70%", margin: "12px 0" }} />
-          <img src={MMQuestion} alt="Question Page" style={{ width: "72%", margin: "12px 0" }} />
+          <img src={MMPreferences} alt="Preferences Page" style={{ width: "50%", margin: "12px 0" }} />
+          <img src={MMPersonalityWhite} alt="Question Page" style={{ width: "50%", margin: "12px 0" }} />
+          <img src={MMQuestionWhite} alt="Question Page" style={{ width: "50%", margin: "12px 0" }} />
 
         </div>
       </section>
@@ -132,7 +139,7 @@ export default function MeteorMate() {
           The Main Page is the hub where users can explore potential matches and navigate the app. The current design is a work in progress, with placeholders and layout concepts ready for further refinement, ensuring that the final version will be fully interactive and polished. </p>
         <div className="iteration-images">
           <img src={MMScreen} alt="Main Page" style={{ width: "100%", margin: "12px 0" }} />
-
+          <img src={MMScreenWhite} alt="Main Page" style={{ width: "100%", margin: "12px 0" }} />
         </div>
       </section>
 
