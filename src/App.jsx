@@ -9,15 +9,16 @@ import Designs from "./pages/Designs";
 import Resume from "./pages/Resume";
 
 import Eunoia from "./pages/Eunoia";
-import MeteorMate from "./pages/MeteorMate";
+import MeteorMate from "./pages/MeteorMates";
 import ACMArchives from "./pages/ACMArchives";
 import GDSC from "./pages/GDSC";
+import Valorant from "./pages/Valorant";
 
 import Prodigy from "./pages/Prodigy";
 import Weather from "./pages/Weather";
 import Voice from "./pages/Voice";
 import Pomodoro from "./pages/Pomodoro";
-import Snake from "./pages/Snake";
+import Galaga from "./pages/Galaga";
 
 const PageWrapper = ({ children }) => (
   <motion.div
@@ -47,6 +48,7 @@ function AnimatedRoutes() {
         <Route path="/projects/meteormate" element={<PageWrapper><MeteorMate /></PageWrapper>} />
         <Route path="/projects/acmarchives" element={<PageWrapper><ACMArchives /></PageWrapper>} />
         <Route path="/projects/gdsc" element={<PageWrapper><GDSC /></PageWrapper>} />
+        <Route path="/projects/valorant" element={<PageWrapper><Valorant /></PageWrapper>} />
 
         {}
         <Route path="/projects/prodigy" element={<PageWrapper><Prodigy /></PageWrapper>} />
@@ -54,7 +56,7 @@ function AnimatedRoutes() {
         <Route path="/projects/voice" element={<PageWrapper><Voice /></PageWrapper>} />
         {}
         <Route path="/projects/pomodoro" element={<PageWrapper><Pomodoro /></PageWrapper>} />
-        <Route path="/projects/snake" element={<PageWrapper><Snake /></PageWrapper>} />
+        <Route path="/projects/galaga" element={<PageWrapper><Galaga /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
   );

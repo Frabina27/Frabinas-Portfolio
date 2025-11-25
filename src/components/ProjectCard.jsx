@@ -11,6 +11,7 @@ const projectPaths = {
   7: "voice",
   8: "pomodoro",
   9: "snake",
+  10: "valorant",
 };
 
 export default function ProjectCard({ id, title, subtitle, tags, image }) {

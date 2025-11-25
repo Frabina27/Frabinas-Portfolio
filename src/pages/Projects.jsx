@@ -38,9 +38,9 @@ export default function Projects() {
       image: PomodoroImg,
     },
     { 
-      title: "Snake Game", 
+      title: "Galaga", 
       id: 9, 
-      subtitle: "Retro snake remake.", 
+      subtitle: "Retro galactica remake", 
       tags: ["C++"] 
     },
   ];

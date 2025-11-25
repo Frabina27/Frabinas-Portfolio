@@ -22,7 +22,26 @@ export default function Eunoia() {
         Inspired by CBRE’s human-centered approach, we designed a gamified digital environment where mood check-ins and team growth feel like leveling up in a pixel adventure game. 
         Our goal was to make workplace wellness interactive, accessible, and enjoyable.
       </p>
-
+        <div className="hero-buttons">
+            <a
+              href="/UXPERIENCE.pdf"
+              className="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              View our Pitch!
+          </a>
+            <a
+              href="/Eunoia.mp4"
+              className="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              Watch our recording!
+            </a>
+          </div>
       {/* Main Image */}
       <img
         src={EunoiaDashImg}
@@ -41,22 +60,19 @@ export default function Eunoia() {
 
       <section className="project-section">
         <h2>Primary Research</h2>
-        <div className="info-card">
           <p>
             We researched workplace wellness trends and human-centered design practices, focusing on ways to make wellness fun and engaging. 
             Key insights included the importance of mood tracking, visual feedback, and something to encourage regular participation.
           </p>
-        </div>
+        
       </section>
 
       <section className="project-section">
         <h2>Competitive Analysis</h2>
-        <div className="info-card">
           <p>
             We analyzed existing wellness apps and gamified productivity tools, noting that none of them provided the features we were looking for in one location.
             Eunoia’s design addressed these gaps with interactive dashboards, avatars, and level progression.
           </p>
-        </div>
       </section>
 
       <hr className="section-divider" />

@@ -4,6 +4,7 @@ import EunoiaImg from "../images/Eunoia/EunoiaImg.png";
 import MeteorMateImg from "../images/MM/MeteorMate.png";
 import GDSCImg from "../images/GDSC/GDSCImg.png";
 import ACM_Page3 from "../images/ACMno/ACM_Page3.png";
+import ValorantImg from "../images/Val/Val1.png";
 import "../css/Designs.css";
 
 export const items = [
@@ -11,7 +12,7 @@ export const items = [
     title: "Eunoia - Wellness Platform",
     id: 1,
     subtitle: "Designed a gamified wellness platform during a 24hr design-a-thon.",
-    tags: ["Branding", "UI/UX"],
+    tags: [ "UI/UX","Figma"],
     image: EunoiaImg,
   },
   {
@@ -34,6 +35,13 @@ export const items = [
     subtitle: "Designed the official website for the Google Developer Student Club.",
     tags: ["Branding", "UI/UX", "Figma"],
     image: GDSCImg,
+  },
+  {
+    title: "Valorant",
+    id: 10,
+    subtitle: "Designed fun and engaging player cards from a popular video game",
+    tags: ["Personal", "UI/UX", "Figma"],
+    image: ValorantImg,
   },
 ];
 
