@@ -38,10 +38,10 @@ export default function Pomodoro() {
       <section className="project-section">
         <h2>Features</h2>
         <ul>
-          <li>⏱ 25-minute focus sessions with built-in short breaks</li>
-          <li>🎨 Minimal, distraction-free interface</li>
-          <li>🔄 Timer animations using basic CSS and JavaScript</li>
-          <li>💾 Optional persistence using browser local storage</li>
+          <li>25-minute focus sessions with built-in short breaks</li>
+          <li>Minimal, distraction-free interface</li>
+          <li>Timer animations using basic CSS and JavaScript</li>
+          <li>Optional persistence using browser local storage</li>
         </ul>
       </section>
 
@@ -88,16 +88,6 @@ let timer = setInterval(() => {
           JavaScript, structure modular functions, and apply smooth UI
           animations. It also helped me improve my understanding of time-based
           user interfaces and simple app logic design.
-        </p>
-      </section>
-
-      {/* Reflection */}
-      <section className="project-section">
-        <h2>Reflection</h2>
-        <p>
-          Building the Pomodoro Timer reinforced the value of simple, purposeful
-          design. Even a small project like this can significantly improve
-          daily focus and productivity when thoughtfully implemented.
         </p>
       </section>
     </div>
