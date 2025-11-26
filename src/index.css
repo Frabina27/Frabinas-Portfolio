@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
 
 :root{
-  --bg-1: #f8f7fc;
+  --bg-1: #7489E9;
   --bg-2: #e8e5f3;
-  --bg-3: #d4cfe8;
+  --bg-3: #A87CC7;
+
   --accent-purple: #9b87d4;
   --accent-light: #c7b8ea;
   --glass: rgba(255,255,255,0.75);
@@ -12,12 +13,14 @@
   --text-secondary: #5a5166;
 }
 
-/* Enhanced Background with subtle animation */
+
+
 .background {
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   position: fixed;
   inset: 0;
   z-index: -1;
+  
   background: 
     radial-gradient(circle at 20% 80%, rgba(199, 184, 234, 0.15) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(155, 135, 212, 0.12) 0%, transparent 50%),
